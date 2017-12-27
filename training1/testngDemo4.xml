@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="my_suite_1">
+<listeners>
+<listener class-name="com.lm.framework.utils.TestListener"/>
+<listener class-name="com.lm.framework.utils.RetryListener"/>
+</listeners>
+	<test name="regression test1">
+	<classes>
+	<class  name="com.lm.ecshop.test.LoginTest1"/>
+	</classes>
+	</test>	
+</suite>

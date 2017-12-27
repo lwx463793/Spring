@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">//级别为warn
+	<Appenders>
+		<Console name="Console" target="SYSTEM_OUT">//表示在控制台输出
+		//十进制的时间、[%t]表示进程、-表示在后面补齐，5表示有5个字符、%logger--指当前跑的类名LogDemo、%msg%--日志输出的信息、%n回车换行	
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Root level="error">//输出错误级别为error以上的才能输出
+			<AppenderRef ref="Console" />//取name="Console"得值
+		</Root>
+	</Loggers>
+</Configuration>
